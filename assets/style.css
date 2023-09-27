@@ -1,0 +1,43 @@
+header{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+ul{
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+a{
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+}
+
+#gradient {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-color: rgb(148, 154, 209);
+    z-index: -1;
+    background: radial-gradient(circle, rgba(2,0,36,1));
+    border-radius: 100%;
+    right: 100px;
+    bottom: 100px;
+    opacity:50%;
+    filter: blur(10px);
+  }
