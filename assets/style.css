@@ -41,3 +41,12 @@ h1{
     opacity:50%;
     filter: blur(10px);
   }
+
+section{
+    display:block;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 60px;
+}
