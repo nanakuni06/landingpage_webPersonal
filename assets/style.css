@@ -21,7 +21,7 @@ header{
     justify-content: space-between;
 }
 
-ul{
+#navbar{
     display: flex;
     gap: 30px;
     list-style-type: none;
@@ -37,7 +37,7 @@ p{
     font-size: 20px;
 }
 
-h2{
+#index-judul{
     font-size: 30px;
 }
 
@@ -251,13 +251,13 @@ footer{
 
 /*about*/
 
-#about{
+#about, #artikel, #portofolio, #layanan, #kontak{
     padding-left: 80px;
     padding-right: 80px;
 	width: fit-content;
 }
 
-h2{
+#about-judul{
 	margin-top: 50px;
 	font-size: 60px;
 	text-align: center;
@@ -270,16 +270,18 @@ h2{
 #list-dokter{
 	display: flex;
 	border-radius: #2c292f;
+	justify-content: space-between;
+	gap: 30px;
+	text-align: center;
 }
 
 #gambar-dokter{
 	border-radius: 100px;
-	justify-content: center;
 	width: 200px;
     height: 200px;
-	padding-left: 40px;
-	padding-right: 40px;
-	padding-top: 20px;
+	/* padding-left: 40px; */
+	/* padding-right: 40px; */
+	/* padding-top: 20px; */
 }
 
 #nama-dokter{
@@ -303,4 +305,44 @@ h2{
 		padding-left: 0px;
 		padding-right: 0px;
 	}
+}
+
+
+/*artikel*/
+#artikel-judul{
+	margin-top: 50px;
+	font-size: 35px;
+}
+
+#list-artikel{
+	display: flex;
+	border-radius: #2c292f;
+	justify-content: space-between;
+	gap: 40px;
+	text-align: center;
+}
+
+#tanggal-artikel{
+	font-size: 12px;
+	text-align: left;
+}
+
+#judul-artikel{
+	text-align: justify;
+	font-size: 16px;
+}
+
+#isi-artikel{
+	text-align: left;
+	font-size: 12px;
+}
+
+/*portofolio*/
+#portofolio-judul{
+	font-size: 24px;
+	margin-top: 50px;
+}
+
+#paragraph-portofolio > p{
+	font-size: 16px;
 }

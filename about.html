@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Onest&display=swap" rel="stylesheet">
-    <script src="javascript/script.js"></script>
+    <script src="javascript/script.js" defer></script>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 </head>
 <body>
@@ -17,18 +17,18 @@
             <h1>KlinikHeula</h1>
         </div>
         <nav class="navbar">
-            <ul>    
+            <ul id="navbar">    
                 <li><a id="link" href="./index.html">Home</a></li>
                 <li><a id="link" href="./about.html">About</a></li>
-                <li><a id="link" href="./portofolio.html">Portofolio</a></li>
                 <li><a id="link" href="./artikel.html">Artikel</a></li>
+                <li><a id="link" href="./portofolio.html">Portofolio</a></li>
             </ul>
         </nav>
     </header>
 
     <section id="about">
         <div>
-            <h2>KlinikHeula</h2>
+            <h2 id="about-judul">KlinikHeula</h2>
         </div>
         <div id="paragraph-about">
             <p>Klinik merupakan fasilitas kesehatan yang menyelenggarakan pelayanan medis, berupa medis dasar dan atau medis spesialistik. Diselenggarakan oleh lebih dari satu jenis tenaga kesehatan juga dipimpin oleh seorang tenaga medis berdasarkan Permenkes</p>
@@ -39,27 +39,8 @@
         </div>
 
         <div id="list-dokter">
-            <div class="list">
-                <img id="gambar-dokter" src="https://media.istockphoto.com/id/1190555637/id/vektor/ikon-profil-dokter-medis-avatar-dokter-pria-ilustrasi-vektor.jpg?s=1024x1024&w=is&k=20&c=gS1aj3jN-VQuwENBQ95tQt2MBWiEInovcrdufOF9xyQ=">
-                <h3 id="nama-dokter">Dr. John Smith, Sp.A</h3>
-                <p id="profile-dokter">Spesialis Anak</p>
-            </div>
-            <div class="list">
-                <img id="gambar-dokter" src="https://media.istockphoto.com/id/1190555628/id/vektor/ikon-profil-dokter-medis-avatar-dokter-wanita-ilustrasi-vektor.jpg?s=170667a&w=0&k=20&c=a2ay89-l6D_i8xnz5QVIx3D4fNbIOpaIT8o17dwv-XM=">
-                <h3 id="nama-dokter">Dr. Emily Brown, Sp.JP</h3>
-                <p id="profile-dokter">Spesialis Jantung dan Pembuluh Darah</p>
-            </div>
-            <div class="list">
-                <img id="gambar-dokter" src="https://media.istockphoto.com/id/1190555637/id/vektor/ikon-profil-dokter-medis-avatar-dokter-pria-ilustrasi-vektor.jpg?s=1024x1024&w=is&k=20&c=gS1aj3jN-VQuwENBQ95tQt2MBWiEInovcrdufOF9xyQ=">
-                <h3 id="nama-dokter">Dr. Syar Johnson, Sp.KK</h3>
-                <p id="profile-dokter">Spesialis Kesehatan Kulit dan Kelamin</p>
-            </div>
-            <div class="list">
-                <img id="gambar-dokter" src="https://media.istockphoto.com/id/1190555628/id/vektor/ikon-profil-dokter-medis-avatar-dokter-wanita-ilustrasi-vektor.jpg?s=170667a&w=0&k=20&c=a2ay89-l6D_i8xnz5QVIx3D4fNbIOpaIT8o17dwv-XM=">
-                <h3 id="nama-dokter">Dr. Jenny Johnson</h3>
-                <p id="profile-dokter">Spesialis Kesehatan</p>
-            </div>
         </div>
+
     </section>
     
     <footer class="footer-distributed">
