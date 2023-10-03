@@ -44,3 +44,4 @@ for(let i = 0; i < artikel.length; i++){
 
     listArtikel.innerHTML += cardArtikel;
 };
+

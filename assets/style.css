@@ -4,16 +4,13 @@
 	padding: 0;
 }
 
-body{
-	width: auto;
-}
-
 header{
     display:flex;
     align-items: center;
     justify-content: space-between;
     padding-left: 80px;
     padding-right: 80px;
+	padding-bottom: 30px;
   }
 
 .navbar{
@@ -67,22 +64,37 @@ p{
     justify-content: space-between;
     padding-left: 80px;
     padding-right: 80px;
+	padding-bottom: 30px;
 }
 
 #index{
     display: flex;
     align-items: center;
-	margin-top: 90px;
+	margin-top: 60px;
 	margin-bottom: 90px;
 }
 
 
 #logo{
-    width: 200px;
-    height: 200px;
+    width: 400px;
+    height: 400px;
     padding-left: 50px;
     padding-right: 100px;
-    padding-top: 40px;
+    padding-top: 30px;
+}
+
+#btn-start{
+	background-color: #008CBA;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 600px;
+    margin-top: 10px;
+	font-size: 25px;
+}
+
+#btn-start:hover{
+	background-color:#33383b;
 }
 
 
@@ -254,49 +266,90 @@ footer{
 #about, #artikel, #portofolio, #layanan, #kontak{
     padding-left: 80px;
     padding-right: 80px;
-	width: fit-content;
+	box-shadow: #2c292f;
+}
+
+.class-about{
+	background-color: gainsboro;
+	padding: 20px;
+	box-shadow: 5px 5px gray;
+	border-radius: 20px;
+}
+
+.class-about > p{
+	font-size: 18px;
+}
+
+#list-hobi{
+	background-color: gainsboro;
+	padding: 20px;
+	box-shadow: 5px 5px gray;
+	border-radius: 20px;
+}
+
+#hobi{
+	background-color: gainsboro;
+	padding: 20px;
+	padding-left: 50px;
+	padding-right: 50px;
+	box-shadow: 5px 5px gray;
+	border-radius: 20px;
+}
+
+#hobi > p{
+	font-size: 16px;
+}
+
+.hobi{
+	display: flex;
+	justify-content: space-between;
 }
 
 #about-judul{
-	margin-top: 50px;
-	font-size: 60px;
-	text-align: center;
+	font-size: 30px;
+	text-align: left;
 }
 
-#paragraph-about{
-	padding-top: 7px;
-}
-
-#list-dokter{
-	display: flex;
+#list-hobi{
+	display: block;
 	border-radius: #2c292f;
-	justify-content: space-between;
 	gap: 30px;
-	text-align: center;
 }
 
-#gambar-dokter{
-	border-radius: 100px;
-	width: 200px;
-    height: 200px;
-	/* padding-left: 40px; */
-	/* padding-right: 40px; */
-	/* padding-top: 20px; */
+#judul-hobi{
+	font-size: 24px;
 }
 
-#nama-dokter{
-	padding-top: 10px;
-	font-size: 18px;
-	text-align: center;
+.judul-kegiatan{
+	background-color: gainsboro;
+	padding: 20px;
+	box-shadow: 5px 5px gray;
+	border-radius: 20px;
 }
 
-#profile-dokter{
-	font-size: 14px;
-	text-align: center;
+#judul-kegiatan{
+	font-size: 24px;
 }
+
+.list-kegiatan{
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+}
+
+.list{
+	background-color: gainsboro;
+	padding: 20px;
+	box-shadow: 5px 5px gray;
+	border-radius: 20px;
+}
+
+#kegiatan{
+	font-size: 20px;
+}
+
 
 @media (max-width: 880px) {
-
 	#about, h2, #paragraph-about, #list-dokter, #nama-dokter, #profile-dokter{
 		display: block;
 		width: 100%;
