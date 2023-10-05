@@ -1,33 +1,32 @@
 let artikel = [
     {
-        "tanggal" : "29 September 20223",
-        "judul" : "5 Cara Menjaga Kesehatan Jantung dengan Pola Hidup Sehatl",
-        "isi" : "Berdasarkan laporan Kemenkes RI, penyakit jantung merupakan penyakit penyebab kematian kedua di Indonesia setelah penyakit stroke.."
+        "gbr-art" : "assets/picture/artikel1.jpg",
+        "tanggal" : "9 Juli 2023",
+        "judul" : "Macam-Macam Bahasa Pemrograman yang Sering Digunakan di Era Digital",
+        "isi" : "Dalam era digital yang terus berkembang pesat, bahasa pemrograman telah menjadi komponen penting dalam dunia teknologi...",
+        "link" : "https://www.kompasiana.com/farhanwirdiyan7781/64aa52ef4addee1956743f32/macam-macam-bahasa-pemrograman-yang-sering-digunakan-di-era-digital"
+
     },
     {
-        "tanggal" : "28 September 2023",
-        "judul" : "Ketahui 10 Tips Gaya Hidup Sehat untuk Mencegah Kanker",
-        "isi" : "Berdasarkan data Globocan 2020, saat ini ada 396.914 kasus baru kanker di Indonesia. Penyakit kanker di Indonesia didominasi oleh kanker"
+        "gbr-art" : "assets/picture/artikel2.jpg",
+        "tanggal" : "21 April 2023",
+        "judul" : "JavaScript: Bahasa Pemograman Penting untuk Pengembangan Web Modern",
+        "isi" : "JavaScript adalah bahasa pemrograman yang paling sering digunakan dalam pengembangan web...",
+        "link" : "https://www.kompasiana.com/zhenxxx1/6442419b08a8b52e4f2a4882/javascript-bahasa-pemograman-penting-untuk-pengembangan-web-modern"
     },
     {
-        "tanggal" : "25 September 2023",
-        "judul" : "Bagaimana Menangani Flu Pada Anak? Yuk, Simak Artikel Berikut!",
-        "isi" : "Sistem kekebalan tubuh pada balita yang masih kurang optimal dapat menjadikan balita rentan terserang berbagai penyakit termasuk flu.."
+        "gbr-art" : "assets/picture/artikel1.jpg",
+        "tanggal" : " 26 Januari 2023",
+        "judul" : "Berikut Deretan Bahasa Pemograman yang Bagus untuk Dipelajari",
+        "isi" : "Salah satu keahlian terpenting yang kamu perlu dalami dalam dunia ini ialah mengetahui cara menulis program komputer....",
+        "link" : "https://www.kompasiana.com/digital69164/63d240674addee4a2e5b8df3/berikut-deretan-bahasa-pemograman-yang-bagus-untuk-dipelajari"
     },
     {
-        "tanggal" : "22 Agustus 2023",
-        "judul" : "8 Tips Menjaga Kesehatan Dari Polusi Udara",
-        "isi" : "Saat ini, polusi udara menjadi masalah kesehatan yang perlu diwaspadai. Polusi udara adalah suatu kondisi dimana udara tercemar oleh zat-zat.."
-    },
-    {
-        "tanggal" : "11 Agustus 2023",
-        "judul" : "Demam Berdarah - Gejala, Penyebab, dan Pencegahan",
-        "isi" : "Demam Berdarah Dengue atau DBD merupakan infeksi yang disebarkan oleh nyamuk Aedes aegypti dengan efek pada kesehatan masyarakat.."
-    },
-    {
-        "tanggal" : "11 Mei 2023",
-        "judul" : "Jangan Terlewat, Ini Jadwal Imunisasi Dasar Lengkap Anak!",
-        "isi" : "Imunisasi dasar merupakan hal yang sangat penting bagi anak, karena sistem kekebalan tubuh pada anak belum terbentuk sempurna.."
+        "gbr-art" : "assets/picture/artikel3.jpg",
+        "tanggal" : " 09 Desember 2022",
+        "judul" : "Ini Dia Roadmap Lengkap bagi Kamu yang Mau Menjadi Frontend Developer!",
+        "isi" : "Di era teknologi hari ini, dimana hampir semua sektor bisnis telah beralih dan bertransformasi ke arah digital, maka hal....",
+        "link" : "https://www.kompasiana.com/azzampridana/63933dcd4addee484a540552/ini-dia-roadmap-lengkap-bagi-kamu-yang-mau-menjadi-frontend-developer"
     }
 ]
 
@@ -35,13 +34,31 @@ let listArtikel = document.getElementById("list-artikel");
 
 for(let i = 0; i < artikel.length; i++){
     let cardArtikel = `
-    <div class="artikel">
-        <img id="gambar-artikel"/>
+    <div class="artikel-kumpulan">
+    <div id="imgArtikel">
+        <img id="gambar-artikel" src="${artikel[i]["gbr-art"]}"/>
+    </div>
+    <div class="rincian">
         <p id="tanggal-artikel">${artikel[i].tanggal}</p>
-        <h3 id="judul-artikel">${artikel[i].judul}</h3>
+        <h3 id="judul-artikel"><a href="${artikel[i].link}">${artikel[i].judul}</a></h3>
         <p id="isi-artikel">${artikel[i].isi}</p>
+    </div>
     </div>`;
 
     listArtikel.innerHTML += cardArtikel;
 };
+
+
+
+let logoBurger = document.getElementById("logo-burger")
+let nav = document.getElementById("nav")
+
+// function myFunction(x) {
+//   x.classList.toggle("change");
+// }
+
+logoBurger.addEventListener("click", () => {
+  // x.classList.toggle("change");
+  nav.classList.toggle("navbar")
+})
 
