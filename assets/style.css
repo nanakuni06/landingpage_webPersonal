@@ -104,6 +104,10 @@ p{
   padding-top: 20px;
 }
 
+#index a{
+	color: white;
+}
+
 
 #logo{
 	max-width: 100%;
