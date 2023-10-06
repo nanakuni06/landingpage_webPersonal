@@ -10,8 +10,15 @@ header{
     justify-content: space-between;
     padding-left: 80px;
     padding-right: 80px;
-	padding-bottom: 30px;
+	padding-bottom: 20px;
 	background-color: rgb(218, 249, 251);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: rgb(218, 249, 251);
+	z-index: 1000; 
+	  
   }
 
   .logo-logo{
@@ -40,12 +47,13 @@ header{
     gap: 30px;
     list-style-type: none;
     justify-content: space-between;
+	
 }
 
 #navbar > li:hover{
-	background-color: #008CBA;
+	background-color: #95b8d1;;
 	border-radius: 10px;
-	padding: 2.5px 5px;
+	padding: 5px 7px;
 }
 
 a{
@@ -92,6 +100,8 @@ p{
     display: flex;
     align-items: center;
 	justify-content: space-between;
+	margin-top: 120px; 
+  padding-top: 20px;
 }
 
 
@@ -142,7 +152,10 @@ p{
 
 	.container {
 		display: inline-block;
-		/* cursor: pointer; */
+	  }
+
+	  .container:hover{
+		background-color: #95b8d1;;
 	  }
 	  
 	  .bar1, .bar2, .bar3 {
@@ -153,12 +166,10 @@ p{
 		transition: 0.4s;
 	  }
 	  
-	  /* Rotate first bar */
 	  .change .bar1 {
 		transform: translate(0, 11px) rotate(-45deg);
 	  }
 	  
-	  /* Fade out the second bar */
 	  .change .bar2 {opacity: 0;}
 	  
 	  /* Rotate last bar */
@@ -202,11 +213,9 @@ footer{
 
 
 .footer-distributed{
-	/* background: rgb(45,81,253);
-	background: linear-gradient(0deg, rgba(45,81,253,1) 0%, rgba(250,251,252,1) 100%);; */
 	justify-content: space-between;
 	display: flex;
-	background-color: #3c8ceb;
+	background-color: rgb(245, 245, 245);
 	box-sizing: border-box;
 	width: 100%;
 	text-align: left;
@@ -268,7 +277,7 @@ footer{
 }
 
 .footer-distributed .footer-center i:hover{
-	background-color: #3d5be6;
+	background-color: #95b8d1;
 }
 
 .footer-distributed .footer-center i.fa-envelope{
@@ -340,7 +349,7 @@ footer{
 }
 
 .footer-distributed .footer-icons a:hover{
-	background-color: #3d5be6;
+	background-color: #95b8d1;
 }
 
 @media (max-width: 768px) {
@@ -366,6 +375,8 @@ footer{
     padding-left: 80px;
     padding-right: 80px;
 	box-shadow: #2c292f;
+	margin-top: 120px; /* Sesuaikan dengan tinggi header dan navbar */
+  padding-top: 20px; /* Anda juga bisa menggunakan padding jika lebih sesuai */
 }
 
 .class-about{

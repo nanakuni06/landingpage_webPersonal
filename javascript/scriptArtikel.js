@@ -61,4 +61,3 @@ logoBurger.addEventListener("click", () => {
   // x.classList.toggle("change");
   nav.classList.toggle("navbar")
 })
-
