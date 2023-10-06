@@ -180,8 +180,9 @@ p{
 	  #index{
 		display: block;
 		align-items: center;
-		margin-top: 30px;
+		margin-top: 120px;
 		margin-bottom: auto;
+		padding-top: 20px; /* Anda juga bisa menggunakan padding jika lebih sesuai */
 	}
 
 	#logo{
@@ -548,7 +549,7 @@ footer{
 
 #artikel-judul{
 	margin-top: 50px;
-	font-size: 35px;
+	font-size: 28px;
 }
 
 #list-artikel{
@@ -566,7 +567,7 @@ footer{
 
 #judul-artikel{
 	text-align: justify;
-	font-size: 16px;
+	font-size: 18px;
 }
 
 #isi-artikel{
@@ -584,7 +585,7 @@ footer{
 }
 
 #blog{
-	font-size: 22px;
+	font-size: 28px;
 }
 
 #kelebihan, #kekurangan{
